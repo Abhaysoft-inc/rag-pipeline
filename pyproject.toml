@@ -1,0 +1,24 @@
+[project]
+name = "rag-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abhaysoft-inc", email = "av385735@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "langchain>=1.4.5",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.10",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.20.1",
+]
+
+[project.scripts]
+rag-pipeline = "rag_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
